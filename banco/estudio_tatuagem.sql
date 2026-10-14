@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Tempo de geração: 07/10/2026 às 22:58
+-- Tempo de geração: 14/10/2026 às 06:58
 -- Versão do servidor: 10.4.32-MariaDB
 -- Versão do PHP: 8.2.12
 
@@ -90,10 +90,11 @@ CREATE TABLE `estilo` (
 --
 
 INSERT INTO `estilo` (`idestilo`, `descricao`) VALUES
-(1, 'Blackwork'),
+(1, 'Blackwo'),
 (2, 'Aquarela'),
 (3, 'Realismo'),
-(4, 'Old School');
+(4, 'Old School'),
+(5, 'anime');
 
 -- --------------------------------------------------------
 
@@ -138,7 +139,10 @@ CREATE TABLE `tatuador` (
 INSERT INTO `tatuador` (`idtatuador`, `nometatuador`, `cpf`, `email`, `telefone`, `datacontratacao`, `idsenioridade`) VALUES
 (1, 'Lucas Mendes', '11111111111', 'lucas@estudio.com', '11999990001', '2020-03-01', 3),
 (2, 'Carla Souza', '22222222222', 'carla@estudio.com', '11999990002', '2022-06-15', 2),
-(3, 'Pedro Lima', '33333333333', 'pedro@estudio.com', '11999990003', '2024-01-10', 1);
+(3, 'Pedro Lima', '33333333333', 'pedro@estudio.com', '11999990003', '2024-01-10', 1),
+(4, 'Michael', '87420347033', 'chacha@gmail.com', '626627182999', '0000-00-00', 2),
+(5, 'melissa', '12345678910', 'melissanoim@gmail.com', '987654321', '2026-10-10', 3),
+(17, 'flavia', '98765432', 'flavia2@gmail.com', '123456789', '2026-10-14', 1);
 
 -- --------------------------------------------------------
 
@@ -157,10 +161,12 @@ CREATE TABLE `tatuador_estilo` (
 --
 
 INSERT INTO `tatuador_estilo` (`idtatuador`, `idestilo`, `dataestilo`) VALUES
-(1, 1, '2020-03-01'),
-(1, 3, '2021-05-10'),
+(1, 1, '2026-10-14'),
+(1, 3, '2026-10-14'),
 (2, 2, '2022-06-15'),
-(3, 4, '2024-01-10');
+(3, 4, '2024-01-10'),
+(17, 1, '2026-10-14'),
+(17, 2, '2026-10-14');
 
 --
 -- Índices para tabelas despejadas
@@ -228,7 +234,7 @@ ALTER TABLE `cliente`
 -- AUTO_INCREMENT de tabela `estilo`
 --
 ALTER TABLE `estilo`
-  MODIFY `idestilo` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=5;
+  MODIFY `idestilo` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=6;
 
 --
 -- AUTO_INCREMENT de tabela `senioridade`
@@ -240,7 +246,7 @@ ALTER TABLE `senioridade`
 -- AUTO_INCREMENT de tabela `tatuador`
 --
 ALTER TABLE `tatuador`
-  MODIFY `idtatuador` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=4;
+  MODIFY `idtatuador` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=18;
 
 --
 -- Restrições para tabelas despejadas
