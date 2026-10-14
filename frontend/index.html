@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Studio Ink & Rose — Estúdio de Tatuagem</title>
+    <!-- Bootstrap 5 CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <style>
+        body {
+            background-color: #fcf6f7;
+            color: #5c4a4e;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+        .navbar {
+            background-color: #ffffff !important;
+            border-bottom: 1px solid #f0e1e4;
+            box-shadow: 0 2px 10px rgba(224, 141, 172, 0.1);
+        }
+        .navbar-brand {
+            color: #d46a8d !important;
+            font-weight: 600;
+            letter-spacing: 0.5px;
+        }
+        .hero-section {
+            padding: 100px 0;
+            background: linear-gradient(135deg, #fff0f3 0%, #fce4ec 100%);
+        }
+        .feature-card {
+            background-color: #ffffff;
+            border: 1px solid #f0e1e4;
+            border-radius: 15px;
+            box-shadow: 0 4px 15px rgba(224, 141, 172, 0.08);
+            transition: transform 0.3s ease;
+        }
+        .feature-card:hover {
+            transform: translateY(-5px);
+            border-color: #d46a8d;
+        }
+        .btn-custom {
+            background-color: #d46a8d;
+            color: #ffffff;
+            border-radius: 25px;
+            padding: 10px 25px;
+            border: none;
+            transition: background 0.3s;
+        }
+        .btn-custom:hover {
+            background-color: #bf5678;
+            color: #ffffff;
+        }
+        .btn-outline-custom {
+            color: #d46a8d;
+            border: 2px solid #d46a8d;
+            border-radius: 25px;
+            padding: 10px 25px;
+            background: transparent;
+            transition: all 0.3s;
+        }
+        .btn-outline-custom:hover {
+            background-color: #d46a8d;
+            color: #ffffff;
+        }
+        footer {
+            background-color: #f7ebed;
+            border-top: 1px solid #f0e1e4;
+            color: #8c7378;
+        }
+    </style>
+</head>
+<body>
+
+  <!-- Navbar -->
+  <nav class="navbar navbar-expand-lg sticky-top">
+    <div class="container">
+      <a class="navbar-brand fw-bold" href="#">
+        Studio Ink & Rose
+      </a>
+      <div>
+        
+        <a href="login.html" class="btn btn-custom btn-sm px-3">Entrar</a>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Hero Section -->
+  <header class="hero-section text-center">
+    <div class="container">
+      <h1 class="display-4 fw-bold mb-4" style="color: #4a383c;">Seu estúdio, organizado do seu jeito</h1>
+      <p class="lead mx-auto mb-5" style="max-width: 700px; color: #735d62;">
+        Gerencie clientes, controle senioridades, acompanhe a agenda de sessões dos tatuadores e catalogue estilos de arte com máxima eficiência e um toque de delicadeza.
+      </p>
+      <a href="cadastro.html" class="btn btn-custom btn-lg shadow-sm">Comece agora</a>
+    </div>
+  </header>
+
+  <!-- Features Section -->
+  <section class="py-5">
+    <div class="container">
+      <div class="row g-4">
+        <div class="col-md-4">
+          <div class="feature-card p-4 h-100 text-center">
+            <h3 class="h5 mb-3" style="color: #4a383c;">Agendamentos Inteligentes</h3>
+            <p class="small" style="color: #735d62;">Organize horários, vincule clientes aos melhores tatuadores e faça upload de desenhos aprovados diretamente no sistema.</p>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="feature-card p-4 h-100 text-center">
+            <h3 class="h5 mb-3" style="color: #4a383c;">Estilos e Especialidades</h3>
+            <p class="small" style="color: #735d62;">Gerencie portfólios, senioridade e quais tatuadores dominam cada estilo de forma prática e organizada.</p>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="feature-card p-4 h-100 text-center">
+            <h3 class="h5 mb-3" style="color: #4a383c;">Controle de Clientes</h3>
+            <p class="small" style="color: #735d62;">Mantenha a base de dados dos clientes segura, acessível e integrada com todo o fluxo de atendimento do estúdio.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="py-4 text-center">
+    <div class="container">
+      <p class="mb-0 small">&copy; 2026 Studio Ink & Rose. Todos os direitos reservados.</p>
+    </div>
+  </footer>
+
+  <!-- Bootstrap JS -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
