@@ -1,4 +1,3 @@
-
 from fastapi.staticfiles import StaticFiles   # ← novo: serve arquivos estáticos (as imagens enviadas)
 from fastapi.middleware.cors import CORSMiddleware
 from fastapi import FastAPI, Depends
